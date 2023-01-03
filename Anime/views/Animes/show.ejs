@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animes</title>
+    <link rel="stylesheet" href="/css/anime.css">
+</head>
+<body>
+    <%-include("../partials/boilerplate")%>
+   <div class="view">
+    <label for="name">Name</label><br>
+       <input type="text" name="anime[name]" id="name" readonly value="<%=anime.name%>">
+       <br><label for="name">Rating</label><br>
+       <input type="text" name="anime[rating]" id="name" readonly value="<%=anime.rating%>">
+       <br><label for="popular">Popular</label><br>
+       <input type="text" name="anime[popular]" id="popular" readonly value="<%=anime.popular%>">
+       <br><label for="category">Category</label><br>
+       <input type="text" name="anime[category]" id="category"  readonly value="<%=anime.category%>">
+       <br><label for="best">Best character</label><br>
+       <input type="text" name="anime[bestCharacter]" id="best" readonly  value="<%=anime.bestCharacter%>">
+       <br><label for="epi">Episodes</label><br>
+       <input type="text" name="anime[episodes]" id="epi" readonly value="<%=anime.episodes%>"> 
+   <br><br>
+   <form action="/anime/<%=anime._id%>/edit">
+    <button class="btn btn-warning">
+        Edit
+    </button>
+
+   </form>
+   <br>
+   <form action="/anime">
+    <button class="btn btn-info">
+        List
+    </button>
+    
+   </form>
+    </div>
+</body>
+</html>

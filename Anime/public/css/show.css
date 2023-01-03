@@ -1,0 +1,12 @@
+.card{
+    position: absolute;
+    left: 550px;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+body{
+ background-image: url("https://i.pinimg.com/originals/61/44/47/6144476034f85a2cafbf95f6eebd2dc1.jpg");
+background-size: contain;
+}

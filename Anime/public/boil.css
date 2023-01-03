@@ -1,0 +1,14 @@
+body{
+    height: 1000px;
+}
+.footer{
+    position: absolute;
+    top: 900px;
+    width: 100%;
+    height: 100px;
+}
+.container{
+    position: absolute;
+    left: 650px;
+    top: 50px;
+}

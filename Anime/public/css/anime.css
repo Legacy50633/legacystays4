@@ -1,0 +1,15 @@
+body{
+    background-image: url("https://i2.wp.com/img2.wikia.nocookie.net/__cb20120731103914/auburnhigh/images/2/26/Rinnegan_sharingan_sasuke_lvl6_by_angelofchaos91-d35gt3c.png");
+   background-size: contain;
+}
+
+.view{
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 300px;
+    position: absolute;
+    left: 600px;
+    top: 200px;
+ 
+}

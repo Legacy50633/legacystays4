@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animes</title>
+    <link rel="stylesheet" href="/css/show.css">
+</head>
+<body>
+    <%-include('../partials/navbar')%>
+
+    <h1>Welcome to  My Anime Academia</h1><br><br>
+    
+    <% for(let anime of animes){%>
+
+        <div class="card" style="width: 25rem;">
+            <img src="https://qph.cf2.quoracdn.net/main-qimg-6126d99011dcbce2cda5a1112c8f7eb8-lq" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><%=anime.name%></h5>
+              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quo consectetur quidem sapiente quod illum ab, laboriosam natus veritatis hic praesentium, nostrum rem neque iure placeat qui sit eligendi quae?</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Rating:<%=anime.rating%></li>
+              <li class="list-group-item">Popular:<%=anime.popular%></li>
+            </ul>
+            <div class="card-body">
+              <div><form action="/anime/<%=anime._id%>">
+<button class="btn btn-info">View</button>
+
+              </form></div><br>
+            <div>
+              <form action="/anime/<%=anime._id%>?_method=DELETE" method="post">
+
+                <button class="btn btn-danger">Delete</button>
+              </form>
+            </div>
+            </div>
+          </div><br><br>
+
+          <%}%>
+</body>
+</html>

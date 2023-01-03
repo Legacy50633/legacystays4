@@ -1,0 +1,15 @@
+body{
+    background-image: url("http://hintergrundbild.org/wallpaper/full/8/6/a/33516-vertical-anime-hintergrundbilder-fuers-handy-1920x1200-pc.jpg");
+   background-size: contain;
+}
+
+.view{
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 300px;
+    position: absolute;
+    left: 600px;
+    top: 200px;
+ 
+}

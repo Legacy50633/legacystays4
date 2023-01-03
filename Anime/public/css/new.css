@@ -1,0 +1,15 @@
+body{
+    background-image: url("https://www.wallpapertip.com/wmimgs/104-1041715_itachi-uchiha-wallpaper-4k.jpg");
+   background-size: contain;
+}
+
+.view{
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 300px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+ 
+}
